@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-6</title>
+</head>
+<body>
+    <h3>6.객체</h3>
+<script>
+    // 객체생성
+    var kb = new Account('국민은행', '101-12-1234', 김유신, 10000);
+    var wr = new Account('우리은행', '101-13-1234', 김춘추, 20000);
+
+    kb.deposit(10000);
+    kb.withdraw(5000);
+    kb.show();
+
+    wr.deposit(40000);
+    wr.withdraw(8000);
+    wr.show();
+
+    // JSON(JavaScript Object Notation) - 자바 객체 표기법
+    var ibk = {
+
+        // 멤버 변수
+        bank: '기업은행',
+        id: '101-11-1010',
+        name: '홍길동',
+        money: 10000,
+
+        // 멤버 함수
+        deposit: function(money) {
+            this.money += money;
+        },
+        withdraw: function(money) {
+            this.money += money;
+        },
+        show: function() {
+            document.write()
+        }
+
+
+    }
+
+    }
+
+
+</script>
+    
+</body>
+</html>
