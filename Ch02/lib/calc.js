@@ -1,16 +1,16 @@
-function plus(x, y) {
+function plus(x, y){
     var z = x + y;
     return z;
 }
-function minus(x, y) {
+function minus(x, y){
     var z = x - y;
     return z;
 }
-function multi(x, y) {
+function multi(x, y){
     var z = x * y;
     return z;
 }
-function div(x, y) {
-    var z = x + y;
+function div(x, y){
+    var z = x / y;
     return z;
 }

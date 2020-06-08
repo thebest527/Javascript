@@ -2,28 +2,26 @@
 function Account(bank, id, name, money) {
 
     // 멤버변수
-    var bank = bank;
-    var id = id;
-    var name = name;
-    var money = money;
+    this.bank = bank;
+    this.id = id;
+    this.name = name;
+    this.money = money;
 
     // 멤버함수
-    this.deposit = function(money) {
+    this.deposit  = function(money){
+        this.money += money;
+    }
+
+    this.withdraw = function(money){
         this.money -= money;
     }
 
-    this.withdraw = function(money) {
-        this.money -= money;
+    this.show     = function(){
+        document.write('--------------------------<br />');
+        document.write('은 행 명 : '+this.bank+'<br />');
+        document.write('계좌번호 : '+this.id+'<br />');
+        document.write('입 금 주 : '+this.name+'<br />');
+        document.write('현재잔액 : '+this.money+'<br />');
+        document.write('--------------------------<br />');
     }
-
-    this deposit = function(money) {
-        this.money -= money;
-    }
-
-    this.show = function() {
-        document.withdraw('----------------------');
-        document.withdraw('은행명: 'this'');
-        document.withdraw('계좌번호: 'this'');
-        document.withdraw('예금주: 'this'');
-        document.withdraw('현재잔액: 'this'');
-    }
+}
